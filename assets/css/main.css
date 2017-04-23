@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
+@import url(../fonts/unisans/unisans.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 /*
@@ -518,50 +519,33 @@
 					text-decoration: none;
 					position: relative;
 					display: block;
-					width: 3.75em;
-					height: 3.75em;
+					width: 3em;
+					height: 3em;
 					border-radius: 100%;
-					border: solid 1px #c8cccf;
-					line-height: 3.75em;
-					overflow: hidden;
+					line-height: 3em;
+					font-size: 1.4em;
 					text-align: center;
-					text-indent: 3.75em;
 					white-space: nowrap;
+					color: #fff;
+					font-family: FontAwesome;
 				}
 
-					ul.icons li a:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						font-family: FontAwesome;
-						font-style: normal;
-						font-weight: normal;
-						text-transform: none !important;
-					}
+				ul.icons li a.fa-behance {
+					background: #130933;
+				}
 
-					ul.icons li a:before {
-						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
-					}
+				ul.icons li a.fa-github {
+					background: #000;
+				}
 
-					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
-					}
+				ul.icons li a.fa-soundcloud {
+					background: #ff8000;
+				}
 
-					ul.icons li a:before {
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: inherit;
-						height: inherit;
-						font-size: 1.85rem;
-						line-height: inherit;
-						text-align: center;
-						text-indent: 0;
-					}
+				ul.icons li a.fa-instagram {
+					background: #622dff;
+				}
 
-					ul.icons li a:hover {
-						border-color: #ff7496;
-					}
 
 			@media screen and (max-width: 480px) {
 
@@ -702,8 +686,11 @@
 		position: relative;
 		max-width: 100%;
 		min-width: 27em;
-		padding: 4.5em 3em 3em 3em ;
-		background: #ffffff;
+		padding: 4.5em 3em 3em 3em;
+		background-color: #ffffff;
+		background-image: url('images/icon-grey.png');
+		background-position: bottom left;
+		background-repeat: no-repeat;
 		border-radius: 4px;
 		cursor: default;
 		opacity: 0.95;
@@ -730,9 +717,19 @@
 			margin-bottom: 1.5em;
 		}
 
+		#main > header > h1 {
+			font-family: UniSansHeavy;
+		}
+
+		#main > header > hr {
+			margin: 1.5em 0;
+			border-color: #e6e7e8;
+		}
+
 		#main .avatar {
 			position: relative;
 			display: block;
+			margin-top: -6em;
 			margin-bottom: 1.5em;
 		}
 
@@ -740,19 +737,7 @@
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
-			}
-
-			#main .avatar:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: -3em;
-				width: calc(100% + 6em);
-				height: 1px;
-				z-index: -1;
-				background: #c8cccf;
+				border: solid 5px white;
 			}
 
 		@media screen and (max-width: 480px) {
@@ -763,9 +748,8 @@
 				padding: 4em 2em 2.5em 2em ;
 			}
 
-				#main .avatar:before {
-					left: -2em;
-					width: calc(100% + 4em);
+				#main .avatar {
+					margin-top: -5em;
 				}
 
 		}
@@ -776,6 +760,10 @@
 			-webkit-transform: rotateX(15deg);
 			-ms-transform: rotateX(15deg);
 			transform: rotateX(15deg);
+		}
+
+		#main > footer {
+			margin-top: 20px;
 		}
 
 /* Footer */
