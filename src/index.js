@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import GhostInput from './GhostInput';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <GhostInput />,
+  document.getElementById('container-ghost-input')
 );
